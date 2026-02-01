@@ -1,0 +1,37 @@
+project_id = "bqjyropagvajvynfumeo"
+
+[functions.student-login]
+verify_jwt = false
+
+[functions.update-first-password]
+verify_jwt = false
+
+[functions.request-password-reset]
+verify_jwt = false
+
+[functions.reset-password]
+verify_jwt = false
+
+[functions.create-student]
+verify_jwt = false
+
+[functions.setup-admin]
+verify_jwt = false
+
+[functions.student-profile]
+verify_jwt = false
+
+[functions.student-dashboard]
+verify_jwt = false
+
+[functions.student-documents]
+verify_jwt = false
+
+[functions.student-forms]
+verify_jwt = false
+
+[functions.admin-student-detail]
+verify_jwt = false
+
+[functions.admin-students]
+verify_jwt = false
