@@ -1,73 +1,182 @@
-# Welcome to your Lovable project
+🎓 Future Edge
 
-## Project info
+Future Edge is a student counselling and admission management platform designed to simplify the post-exam admission journey.
+It helps students make informed decisions about colleges, branches, and admissions, while enabling counsellors/admins to manage the entire process efficiently.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🚀 What Problem Does Future Edge Solve?
 
-## How can I edit this code?
+After entrance exams like MHT-CET / JEE, students often struggle with:
 
-There are several ways of editing your application.
+Choosing the right college
 
-**Use Lovable**
+Choosing the right branch
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Understanding CAP rounds & deadlines
 
-Changes made via Lovable will be committed automatically to this repo.
+Managing documents and forms
 
-**Use your preferred IDE**
+Tracking admission progress
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Future Edge solves this by providing a single, guided platform for students and counsellors.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+✨ Key Features
+👨‍🎓 Student Side
 
-Follow these steps:
+Secure login using registration number
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Personalized student dashboard
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Admission progress tracking (multi-stage process)
 
-# Step 3: Install the necessary dependencies.
-npm i
+Document upload (PNG/JPEG, optional documents allowed)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Download filled forms uploaded by admin
+
+View notices and updates published by admin
+
+Mobile-friendly interface
+
+🧑‍💼 Admin Side
+
+Secure admin authentication
+
+Create and manage student accounts
+
+View all registered students
+
+Update student admission progress
+
+Upload forms for specific students
+
+View & download student-uploaded documents
+
+Publish / remove news and notices
+
+Centralized admin dashboard
+
+🧠 Platform Flow (High Level)
+
+Public landing page opens first
+
+Student/Admin logs in
+
+Students access their dashboard
+
+Admin manages students, documents, forms & notices
+
+Admission progress is tracked step-by-step
+
+🛠️ Tech Stack
+Frontend
+
+React
+
+Vite
+
+TypeScript
+
+Tailwind CSS
+
+Backend / Services
+
+Supabase
+
+Authentication
+
+Database
+
+Row Level Security (RLS)
+
+Storage
+
+Deployment
+
+Vercel
+
+🔐 Security Highlights
+
+Role-based access (Student / Admin)
+
+Supabase Row Level Security (RLS)
+
+No direct client-side database access
+
+Secure document storage
+
+Environment variables for secrets
+
+.env excluded from Git repository
+
+📂 Project Setup (Local Development)
+1️⃣ Clone the repository
+git clone https://github.com/<your-username>/future-edge.git
+cd future-edge
+2️⃣ Install dependencies
+npm install
+3️⃣ Setup environment variables
+
+Create a .env file in the project root:
+
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_anon_key
+VITE_SUPABASE_PROJECT_ID=your_project_id
+
+⚠️ Never commit .env to GitHub.
+
+4️⃣ Run the project
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+App will run at:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+http://localhost:5173
+🌍 Deployment
 
-**Use GitHub Codespaces**
+The project is deployed using Vercel.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Steps:
 
-## What technologies are used for this project?
+Push code to GitHub
 
-This project is built with:
+Import repo into Vercel
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Add environment variables in Vercel dashboard
 
-## How can I deploy this project?
+Deploy
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+📸 Screens & UI
 
-## Can I connect a custom domain to my Lovable project?
+Public Landing Page (Explore Colleges & Branches)
 
-Yes, you can!
+Student Dashboard
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Admin Dashboard
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Document Upload & Download
+
+Admission Progress Tracker
+
+(Screenshots can be added here later)
+
+📈 Future Enhancements
+
+Rank-based college suggestions
+
+College & branch comparison tools
+
+Counselling appointment booking
+
+Email / WhatsApp notifications
+
+Analytics dashboard for admins
+
+Multi-exam support (NEET, others)
+
+👤 Author
+
+Future Edge
+Student Counselling & Admission Guidance Platform
+
+📄 License
+
+This project is currently under active development.
+License can be added later if required.
